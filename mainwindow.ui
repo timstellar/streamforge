@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Inter</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Main</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QWidget" name="header" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #0E0E10
+</string>
+    </property>
+    <widget class="QPushButton" name="home">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>5</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../Programming/Twitch/logo.png</normaloff>../../Programming/Twitch/logo.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>34</width>
+       <height>40</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="accounts">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>10</y>
+       <width>100</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Inter</family>
+       <pointsize>18</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:none;
+border: 0;</string>
+     </property>
+     <property name="text">
+      <string>Accounts</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="proxies">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>10</y>
+       <width>100</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Inter</family>
+       <pointsize>18</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:none;
+border: 0;</string>
+     </property>
+     <property name="text">
+      <string>Proxies</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="following">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>10</y>
+       <width>100</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Inter</family>
+       <pointsize>18</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:none;
+border: 0;</string>
+     </property>
+     <property name="text">
+      <string>Following</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="sidebar" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>240</width>
+      <height>670</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #1F1F23
+</string>
+    </property>
+    <widget class="QLabel" name="liveChannelsLabel">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>45</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Inter</family>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>LIVE CHANNELS</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="proxiesOnlineLabel">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>15</y>
+       <width>110</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Inter</family>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>PROXIES ONLINE</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="proxiesStatus">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>15</y>
+       <width>82</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Inter</family>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>0/0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pc">
+     <property name="geometry">
+      <rect>
+       <x>209</x>
+       <y>15</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:0;
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset theme="QIcon::ThemeIcon::Computer"/>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="liveChannels">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>70</y>
+       <width>210</width>
+       <height>585</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0;</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="channels">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>210</width>
+        <height>585</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="channel" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>210</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="channelAvatar">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>30</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #848494;
+border-radius: 15
+;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="channelNickname">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>0</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <pointsize>14</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Nickname</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="channelCategory">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>16</y>
+          <width>111</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>Category</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="channelOnline">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>0</y>
+          <width>55</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: none;
+border: 0;
+text-align: right;</string>
+        </property>
+        <property name="text">
+         <string>100</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../Adobe/thumbnail/Ellipse 1.png</normaloff>../../Adobe/thumbnail/Ellipse 1.png</iconset>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="main">
+    <property name="geometry">
+     <rect>
+      <x>239</x>
+      <y>49</y>
+      <width>1040</width>
+      <height>670</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #0E0E10;</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="accounts_2">
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>750</width>
+        <height>670</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Inter</family>
+       </font>
+      </property>
+      <property name="rowCount">
+       <number>1</number>
+      </property>
+      <property name="columnCount">
+       <number>3</number>
+      </property>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <row/>
+      <column>
+       <property name="text">
+        <string>Nickname</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Inter</family>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Followers</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Inter</family>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Actions</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Inter</family>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>Robot0001</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string>123</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item row="0" column="2">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+     </widget>
+     <widget class="QWidget" name="manage" native="true">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>0</y>
+        <width>290</width>
+        <height>670</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="manageLabel">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>291</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Inter</family>
+         <pointsize>18</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LayoutDirection::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>Manage accounts</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QWidget" name="raid" native="true">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>40</y>
+         <width>260</width>
+         <height>140</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="raidLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>RAID</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="raidNickname">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>260</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #18181B;
+border-radius: 5;
+padding: 5;
+border: 1px solid #26262C;</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="placeholderText">
+         <string>Nickname</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="raidSubmit">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>110</y>
+          <width>125</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #772CE8;
+border: 0;
+border-radius: 5;</string>
+        </property>
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="raidAmount">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>70</y>
+          <width>260</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #18181B;
+border-radius: 5;
+padding: 5;
+border: 1px solid #26262C;</string>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::InputMethodHint::ImhDigitsOnly</set>
+        </property>
+        <property name="inputMask">
+         <string/>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="placeholderText">
+         <string>Amount</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="addFollowers" native="true">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>190</y>
+         <width>260</width>
+         <height>140</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="addFollowersLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>ADD FOLLOWERS</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="addFollowersNickname">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>260</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #18181B;
+border-radius: 5;
+padding: 5;
+border: 1px solid #26262C;</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="placeholderText">
+         <string>Nickname</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="addFollowersSubmit">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>110</y>
+          <width>125</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #772CE8;
+border: 0;
+border-radius: 5;</string>
+        </property>
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="addFollowersAmount">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>70</y>
+          <width>260</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #18181B;
+border-radius: 5;
+padding: 5;
+border: 1px solid #26262C;</string>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::InputMethodHint::ImhDigitsOnly</set>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="placeholderText">
+         <string>Amount</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="registerAccounts" native="true">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>340</y>
+         <width>260</width>
+         <height>140</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="registerAccountLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>REGISTER ACCOUNTS</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="registerAccountsNickname">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>260</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #18181B;
+border-radius: 5;
+padding: 5;
+border: 1px solid #26262C;</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="placeholderText">
+         <string>Nickname</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="registerAccountsSubmit">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>110</y>
+          <width>125</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #772CE8;
+border: 0;
+border-radius: 5;</string>
+        </property>
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="registerAccountsAmount">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>70</y>
+          <width>260</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #18181B;
+border-radius: 5;
+padding: 5;
+border: 1px solid #26262C;</string>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::InputMethodHint::ImhDigitsOnly</set>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="placeholderText">
+         <string>Amount</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="addAccounts" native="true">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>490</y>
+         <width>260</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="addAccountsLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>ADD ACCOUNTS</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="addAccountsNickname">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>260</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #18181B;
+border-radius: 5;
+padding: 5;
+border: 1px solid #26262C;</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="placeholderText">
+         <string>Nickname</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="addAccountsPassword">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>70</y>
+          <width>260</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #18181B;
+border-radius: 5;
+padding: 5;
+border: 1px solid #26262C;</string>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::InputMethodHint::ImhDigitsOnly</set>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="placeholderText">
+         <string>Password</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="addAccountsToken">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>110</y>
+          <width>260</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #18181B;
+border-radius: 5;
+padding: 5;
+border: 1px solid #26262C;</string>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::InputMethodHint::ImhDigitsOnly</set>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="placeholderText">
+         <string>Token</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="addAccountsSubmit">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>150</y>
+          <width>125</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #772CE8;
+border: 0;
+border-radius: 5;</string>
+        </property>
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="addAccountsFiles">
+        <property name="geometry">
+         <rect>
+          <x>234</x>
+          <y>150</y>
+          <width>26</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #772CE8;
+border: 0;
+border-radius: 5;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset theme="QIcon::ThemeIcon::DocumentOpen"/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="addAccountsLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>135</x>
+          <y>150</y>
+          <width>91</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Inter</family>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>or import file</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2"/>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
